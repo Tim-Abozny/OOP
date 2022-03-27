@@ -27,6 +27,10 @@ namespace OOP_Lab1_Forms
             Application.Exit();
         }
         public static int ClientIDst = -1;
+        public static int ClientPinst = 0;
+        public static string ClientNamest = "";
+        public static string ClientSurnamest = "";
+        public static string ClientLoginst = "";
         private void loginButton_Click(object sender, EventArgs e)
         {
             string[] clientsData = FileOperations.GetClientsData();
@@ -61,13 +65,50 @@ namespace OOP_Lab1_Forms
                 if (clientLogin == AccNum_TB.Text && clientPass == Pin_TB.Text)
                 {
                     int k = 0;
-                    string tempID = "";
+                    string tempData = "";
                     while (clientsData[i][k] != '/')
                     {
-                        tempID += clientsData[i][k];
+                        tempData += clientsData[i][k];
                         k++;
                     }
-                    ClientIDst = Convert.ToInt32(tempID);
+                    ClientIDst = Convert.ToInt32(tempData);
+
+                    k++;
+                    tempData = "";
+                    while (clientsData[i][k] != '/')
+                    {
+                        tempData += clientsData[i][k];
+                        k++;
+                    }
+                    ClientNamest = tempData;
+
+                    k++;
+                    tempData = "";
+                    while (clientsData[i][k] != '/')
+                    {
+                        tempData += clientsData[i][k];
+                        k++;
+                    }
+                    ClientSurnamest = tempData;
+
+                    k++;
+                    tempData = "";
+                    while (clientsData[i][k] != '/')
+                    {
+                        tempData += clientsData[i][k];
+                        k++;
+                    }
+                    ClientLoginst = tempData;
+
+                    k++;
+                    tempData = "";
+                    while (clientsData[i][k] != '/')
+                    {
+                        tempData += clientsData[i][k];
+                        k++;
+                    }
+                    ClientPinst = Convert.ToInt32(tempData);
+
                     i = clientsData[i].Length;
                 }
                 slashCount = 0;
@@ -91,6 +132,13 @@ namespace OOP_Lab1_Forms
             SignUpClient client = new SignUpClient();
             this.Hide();
             client.Show();
+        }
+
+        private void my_Button1_Click(object sender, EventArgs e)
+        {
+            BankStartPage startPage = new BankStartPage();
+            this.Hide();
+            startPage.Show();
         }
     }
 }

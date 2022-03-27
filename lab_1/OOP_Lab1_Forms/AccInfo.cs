@@ -31,13 +31,11 @@ namespace OOP_Lab1_Forms
 
         private void AccInfo_Load(object sender, EventArgs e)
         {
-            Client client = new Client();
-
-            client.ClientName = Name_TB.Text;
-            client.ClientSurname = Surname_TB.Text;
-            client.ClientLogin = ClientLogin_TB.Text;
-            client.ClientID = Convert.ToInt32(ID_TB.Text);
-            client.ClientPIN = Convert.ToInt32(Pin_TB.Text);
+            Name_TB.Text        = Login.ClientNamest;
+            Surname_TB.Text     = Login.ClientSurnamest;
+            ClientLogin_TB.Text = Login.ClientLoginst;
+            ID_TB.Text          = Login.ClientIDst.ToString();
+            Pin_TB.Text         = Login.ClientPinst.ToString();
         }
     }
 }
