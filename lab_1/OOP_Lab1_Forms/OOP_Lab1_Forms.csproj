@@ -52,6 +52,12 @@
     <Compile Include="AccInfo.Designer.cs">
       <DependentUpon>AccInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BankStartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankStartPage.Designer.cs">
+      <DependentUpon>BankStartPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Drawer.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="AccInfo.resx">
       <DependentUpon>AccInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankStartPage.resx">
+      <DependentUpon>BankStartPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -115,7 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientRequests\CreditRequests.txt" />
-    <Content Include="SystemDB\ClientsDB.txt" />
+    <None Include="Resources\bank_icon_129525.png" />
+    <None Include="Resources\bank_88995.png" />
+    <None Include="Resources\bank_icon_129219.png" />
+    <Content Include="SystemDB\BSUIRClientsDB.txt" />
     <None Include="Resources\atm_machine_finance_cash_withdraw_money_icon_153132.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
