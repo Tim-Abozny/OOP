@@ -98,6 +98,7 @@ namespace OOP_Lab1_Forms
             this.forestBankPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.forestBankPicture.TabIndex = 19;
             this.forestBankPicture.TabStop = false;
+            this.forestBankPicture.Click += new System.EventHandler(this.forestBankPicture_Click);
             this.forestBankPicture.MouseLeave += new System.EventHandler(this.forestBankPicture_MouseLeave);
             this.forestBankPicture.MouseHover += new System.EventHandler(this.forestBankPicture_MouseHover);
             // 
@@ -123,6 +124,7 @@ namespace OOP_Lab1_Forms
             this.betaBankPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.betaBankPicture.TabIndex = 17;
             this.betaBankPicture.TabStop = false;
+            this.betaBankPicture.Click += new System.EventHandler(this.betaBankPicture_Click);
             this.betaBankPicture.MouseLeave += new System.EventHandler(this.betaBankPicture_MouseLeave);
             this.betaBankPicture.MouseHover += new System.EventHandler(this.betaBankPicture_MouseHover);
             // 

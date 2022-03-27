@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -47,6 +40,8 @@ namespace OOP_Lab1_Forms
 
         private void Logout_label_Click(object sender, EventArgs e)
         {
+            Login.AccountLogout();
+
             Login login = new Login();
             this.Hide();
             login.Show();
