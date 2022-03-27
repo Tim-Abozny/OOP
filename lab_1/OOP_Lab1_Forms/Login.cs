@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -15,11 +8,6 @@ namespace OOP_Lab1_Forms
         public Login()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -133,9 +121,26 @@ namespace OOP_Lab1_Forms
             this.Hide();
             client.Show();
         }
+        public static void AccountLogout()
+        {
+            ClientIDst                  = -1;
+            ClientPinst                 = 0;
+            ClientNamest                = "";
+            ClientSurnamest             = "";
+            ClientLoginst               = "";
+        }
+        public static void ChooseBank()
+        {
+            BankStartPage.BSUIR_Login = 0;
+            BankStartPage.BETA_Login = 0;
+            BankStartPage.FOREST_Login = 0;
+        }
 
         private void my_Button1_Click(object sender, EventArgs e)
         {
+            Login.AccountLogout();
+            Login.ChooseBank();
+
             BankStartPage startPage = new BankStartPage();
             this.Hide();
             startPage.Show();

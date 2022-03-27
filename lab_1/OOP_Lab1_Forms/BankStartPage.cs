@@ -50,9 +50,28 @@ namespace OOP_Lab1_Forms
             forestBankPicture.Width -= 5;
             forestBankPicture.Height -= 5;
         }
-
+        public static int BSUIR_Login = 0;
+        public static int BETA_Login = 0;
+        public static int FOREST_Login = 0;
         private void bsuirBankPicture_Click(object sender, EventArgs e)
         {
+            BSUIR_Login = 1;
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void betaBankPicture_Click(object sender, EventArgs e)
+        {
+            BETA_Login = 1;
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void forestBankPicture_Click(object sender, EventArgs e)
+        {
+            FOREST_Login = 1;
             Login login = new Login();
             this.Hide();
             login.Show();

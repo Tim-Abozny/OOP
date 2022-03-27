@@ -127,6 +127,8 @@
     <None Include="Resources\bank_icon_129525.png" />
     <None Include="Resources\bank_88995.png" />
     <None Include="Resources\bank_icon_129219.png" />
+    <Content Include="SystemDB\FORESTClientsDB.txt" />
+    <Content Include="SystemDB\BETAClientsDB.txt" />
     <Content Include="SystemDB\BSUIRClientsDB.txt" />
     <None Include="Resources\atm_machine_finance_cash_withdraw_money_icon_153132.png" />
   </ItemGroup>
