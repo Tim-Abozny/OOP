@@ -58,6 +58,12 @@
     <Compile Include="BankStartPage.Designer.cs">
       <DependentUpon>BankStartPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepositClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositClient.Designer.cs">
+      <DependentUpon>DepositClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Drawer.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -84,11 +90,20 @@
     <Compile Include="SignUpClient.Designer.cs">
       <DependentUpon>SignUpClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="WithdrawClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawClient.Designer.cs">
+      <DependentUpon>WithdrawClient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AccInfo.resx">
       <DependentUpon>AccInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BankStartPage.resx">
       <DependentUpon>BankStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositClient.resx">
+      <DependentUpon>DepositClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -109,6 +124,9 @@
     <EmbeddedResource Include="SignUpClient.resx">
       <DependentUpon>SignUpClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawClient.resx">
+      <DependentUpon>WithdrawClient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +145,9 @@
     <None Include="Resources\bank_icon_129525.png" />
     <None Include="Resources\bank_88995.png" />
     <None Include="Resources\bank_icon_129219.png" />
+    <Content Include="LogsDB\BSUIRLogs.txt" />
+    <Content Include="LogsDB\FORESTLogs.txt" />
+    <Content Include="LogsDB\BETALogs.txt" />
     <Content Include="SystemDB\FORESTClientsDB.txt" />
     <Content Include="SystemDB\BETAClientsDB.txt" />
     <Content Include="SystemDB\BSUIRClientsDB.txt" />

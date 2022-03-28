@@ -46,5 +46,19 @@ namespace OOP_Lab1_Forms
             this.Hide();
             login.Show();
         }
+
+        private void depositButton_Click(object sender, EventArgs e)
+        {
+            DepositClient deposit = new DepositClient();
+            this.Hide();
+            deposit.Show();
+        }
+
+        private void withdrawButton_Click(object sender, EventArgs e)
+        {
+            WithdrawClient withdraw = new WithdrawClient();
+            this.Hide();
+            withdraw.Show();
+        }
     }
 }
