@@ -3,6 +3,15 @@ namespace OOP_Lab1_Forms
 {
     class Client
     {
+        private double _clientBalance;
+
+        public double ClientBalance
+        {
+            get { return _clientBalance; }
+            set { _clientBalance = value; }
+        }
+
+
         private string _clientName;
 
         public string ClientName

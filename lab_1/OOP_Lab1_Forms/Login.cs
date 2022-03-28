@@ -19,6 +19,7 @@ namespace OOP_Lab1_Forms
         public static string ClientNamest = "";
         public static string ClientSurnamest = "";
         public static string ClientLoginst = "";
+        public static double ClientBalancest = 0;
         private void loginButton_Click(object sender, EventArgs e)
         {
             string[] clientsData = FileOperations.GetClientsData();
@@ -48,8 +49,10 @@ namespace OOP_Lab1_Forms
                             clientPass += clientsData[i][j];
                             j++;
                         }
+                        j = clientsData[i].Length;
                     }
-                }
+                }//end for[j] cycle
+
                 if (clientLogin == AccNum_TB.Text && clientPass == Pin_TB.Text)
                 {
                     int k = 0;
@@ -97,12 +100,21 @@ namespace OOP_Lab1_Forms
                     }
                     ClientPinst = Convert.ToInt32(tempData);
 
+                    k++;
+                    tempData = "";
+                    while (clientsData[i][k] != '/')
+                    {
+                        tempData += clientsData[i][k];
+                        k++;
+                    }
+                    ClientBalancest = Convert.ToDouble(tempData);
+
                     i = clientsData[i].Length;
                 }
                 slashCount = 0;
                 clientLogin = "";
                 clientPass = "";
-            }
+            }//end for[i] cycle
             if (ClientIDst == -1)
             {
                 MessageBox.Show("WRONG LOGIN OR PASS");
@@ -128,6 +140,7 @@ namespace OOP_Lab1_Forms
             ClientNamest                = "";
             ClientSurnamest             = "";
             ClientLoginst               = "";
+            ClientBalancest             = 0;
         }
         public static void ChooseBank()
         {
