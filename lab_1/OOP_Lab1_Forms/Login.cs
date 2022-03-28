@@ -15,7 +15,7 @@ namespace OOP_Lab1_Forms
             Application.Exit();
         }
         public static int ClientIDst = -1;
-        public static int ClientPinst = 0;
+        public static string ClientPinst = "";
         public static string ClientNamest = "";
         public static string ClientSurnamest = "";
         public static string ClientLoginst = "";
@@ -98,7 +98,7 @@ namespace OOP_Lab1_Forms
                         tempData += clientsData[i][k];
                         k++;
                     }
-                    ClientPinst = Convert.ToInt32(tempData);
+                    ClientPinst = tempData;
 
                     k++;
                     tempData = "";
@@ -136,7 +136,7 @@ namespace OOP_Lab1_Forms
         public static void AccountLogout()
         {
             ClientIDst                  = -1;
-            ClientPinst                 = 0;
+            ClientPinst                 = "";
             ClientNamest                = "";
             ClientSurnamest             = "";
             ClientLoginst               = "";

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -37,7 +30,7 @@ namespace OOP_Lab1_Forms
             client.ClientSurname = Surname_TB.Text;
             client.ClientLogin = ClientLogin_TB.Text;
             client.ClientID = Convert.ToInt32(ID_TB.Text);
-            client.ClientPIN = Convert.ToInt32(Pin_TB.Text);
+            client.ClientPIN = Pin_TB.Text;
 
             FileOperations.AddClient
                 (

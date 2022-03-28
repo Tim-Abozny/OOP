@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -35,7 +28,7 @@ namespace OOP_Lab1_Forms
             Surname_TB.Text     = Login.ClientSurnamest;
             ClientLogin_TB.Text = Login.ClientLoginst;
             ID_TB.Text          = Login.ClientIDst.ToString();
-            Pin_TB.Text         = Login.ClientPinst.ToString();
+            Pin_TB.Text         = Login.ClientPinst;
         }
     }
 }
