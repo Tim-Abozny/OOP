@@ -28,9 +28,9 @@ namespace OOP_Lab1_Forms
             set { _clientSurname = value; }
         }
 
-        private int _clientPIN;
+        private string _clientPIN;
 
-        public int ClientPIN
+        public string ClientPIN
         {
             get { return _clientPIN; }
             set { _clientPIN = value; }

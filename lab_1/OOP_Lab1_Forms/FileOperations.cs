@@ -73,7 +73,7 @@ namespace OOP_Lab1_Forms
                 string ClientSurname,
                 string ClientLogin,
                 int ClientID, 
-                int ClientPIN
+                string ClientPIN
             )
         {
             string clientData = $"{ClientID}/{ClientName}/{ClientSurname}/{ClientLogin}/{ClientPIN}/0/" + Environment.NewLine;
@@ -99,7 +99,7 @@ namespace OOP_Lab1_Forms
             {
                 ClientFileID = Convert.ToInt32(fileData[fileData.Length - 1][0]) + 1;
             }
-            currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\Logs\";
+            currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
 
             return ClientFileID;
         }

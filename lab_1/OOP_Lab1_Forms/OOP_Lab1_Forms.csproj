@@ -71,6 +71,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="my_Button.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -142,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientRequests\CreditRequests.txt" />
+    <Content Include="SystemDB\BETAManagers.txt" />
+    <Content Include="SystemDB\BSUIRManagers.txt" />
+    <Content Include="SystemDB\FORESTManagers.txt" />
     <None Include="Resources\bank_icon_129525.png" />
     <None Include="Resources\bank_88995.png" />
     <None Include="Resources\bank_icon_129219.png" />
