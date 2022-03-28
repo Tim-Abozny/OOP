@@ -5,7 +5,7 @@ namespace OOP_Lab1_Forms
 {
     class FileOperations
     {
-        public static string currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\Logs\";
+        public static string currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
         public static string currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
         public static void CurrentPath()
         {
@@ -108,9 +108,9 @@ namespace OOP_Lab1_Forms
             LogPath();
 
             string clientOperation = $"{Login.ClientIDst}/{Login.ClientNamest}/{Login.ClientSurnamest}/{operation}/{sum}/" + Environment.NewLine;
-            File.AppendAllText(currentPath, clientOperation);
+            File.AppendAllText(currentLogsPath, clientOperation);
 
-            currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\Logs\";
+            currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
         }
     }
 }

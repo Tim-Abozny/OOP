@@ -31,7 +31,6 @@ namespace OOP_Lab1_Forms
         {
             this.BalanceNumLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.withdrawButton = new System.Windows.Forms.my_Button();
             this.WithrdawTB = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,6 +38,7 @@ namespace OOP_Lab1_Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.withdrawButton = new System.Windows.Forms.my_Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,25 +64,11 @@ namespace OOP_Lab1_Forms
             this.label2.TabIndex = 75;
             this.label2.Text = "AVAILABLE BALANCE:";
             // 
-            // withdrawButton
-            // 
-            this.withdrawButton.BackColor = System.Drawing.Color.MidnightBlue;
-            this.withdrawButton.Font = new System.Drawing.Font("Russo One", 12F);
-            this.withdrawButton.ForeColor = System.Drawing.Color.White;
-            this.withdrawButton.Location = new System.Drawing.Point(166, 199);
-            this.withdrawButton.Name = "withdrawButton";
-            this.withdrawButton.Rounding = 50;
-            this.withdrawButton.RoundingEnable = true;
-            this.withdrawButton.Size = new System.Drawing.Size(192, 30);
-            this.withdrawButton.TabIndex = 74;
-            this.withdrawButton.Text = "WITHDRAW";
-            this.withdrawButton.UseVisualStyleBackColor = false;
-            this.withdrawButton.Click += new System.EventHandler(this.withdrawButton_Click);
-            // 
             // WithrdawTB
             // 
             this.WithrdawTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.WithrdawTB.Font = new System.Drawing.Font("Russo One", 16F);
+            this.WithrdawTB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.WithrdawTB.Location = new System.Drawing.Point(166, 150);
             this.WithrdawTB.Name = "WithrdawTB";
             this.WithrdawTB.Size = new System.Drawing.Size(192, 33);
@@ -154,6 +140,21 @@ namespace OOP_Lab1_Forms
             this.label1.Size = new System.Drawing.Size(327, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "B A N K  S Y S T E M";
+            // 
+            // withdrawButton
+            // 
+            this.withdrawButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.withdrawButton.Font = new System.Drawing.Font("Russo One", 12F);
+            this.withdrawButton.ForeColor = System.Drawing.Color.White;
+            this.withdrawButton.Location = new System.Drawing.Point(166, 199);
+            this.withdrawButton.Name = "withdrawButton";
+            this.withdrawButton.Rounding = 50;
+            this.withdrawButton.RoundingEnable = true;
+            this.withdrawButton.Size = new System.Drawing.Size(192, 30);
+            this.withdrawButton.TabIndex = 74;
+            this.withdrawButton.Text = "WITHDRAW";
+            this.withdrawButton.UseVisualStyleBackColor = false;
+            this.withdrawButton.Click += new System.EventHandler(this.withdrawButton_Click);
             // 
             // WithdrawClient
             // 

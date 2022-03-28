@@ -59,6 +59,7 @@ namespace OOP_Lab1_Forms
             // 
             this.DepositTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.DepositTB.Font = new System.Drawing.Font("Russo One", 16F);
+            this.DepositTB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.DepositTB.Location = new System.Drawing.Point(134, 95);
             this.DepositTB.Name = "DepositTB";
             this.DepositTB.Size = new System.Drawing.Size(192, 33);

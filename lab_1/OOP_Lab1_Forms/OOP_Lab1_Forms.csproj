@@ -145,9 +145,9 @@
     <None Include="Resources\bank_icon_129525.png" />
     <None Include="Resources\bank_88995.png" />
     <None Include="Resources\bank_icon_129219.png" />
-    <Content Include="Logs\BSUIRLogs.txt" />
-    <Content Include="Logs\FORESTLogs.txt" />
-    <Content Include="Logs\BETALogs.txt" />
+    <Content Include="LogsDB\BSUIRLogs.txt" />
+    <Content Include="LogsDB\FORESTLogs.txt" />
+    <Content Include="LogsDB\BETALogs.txt" />
     <Content Include="SystemDB\FORESTClientsDB.txt" />
     <Content Include="SystemDB\BETAClientsDB.txt" />
     <Content Include="SystemDB\BSUIRClientsDB.txt" />
