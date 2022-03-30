@@ -33,7 +33,7 @@ namespace OOP_Lab1_Forms
                 else
                 {
                     Login.ClientBalancest += Convert.ToInt32(DepositTB.Text);
-                    FileOperations.WriteOperaion(Convert.ToInt32(DepositTB.Text), "DEPOSIT");
+                    FileOperations.BalanceOperaion(Convert.ToInt32(DepositTB.Text), "DEPOSIT");
                 }
             }
             catch (Exception ex)

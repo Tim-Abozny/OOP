@@ -26,7 +26,7 @@ namespace OOP_Lab1_Forms
                 else if (Convert.ToInt32(WithrdawTB.Text) < Login.ClientBalancest)
                 {
                     Login.ClientBalancest -= Convert.ToInt32(WithrdawTB.Text);
-                    FileOperations.WriteOperaion(Convert.ToInt32(WithrdawTB.Text), "WITHDRAW");
+                    FileOperations.BalanceOperaion(Convert.ToInt32(WithrdawTB.Text), "WITHDRAW");
                 }
                 else
                 {

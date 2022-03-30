@@ -117,6 +117,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -147,7 +150,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClientRequests\CreditRequests.txt" />
+    <Content Include="ClientRequests\FORESTRequests.txt" />
+    <Content Include="ClientRequests\BSUIRRequests.txt" />
+    <Content Include="ClientRequests\BETARequests.txt" />
+    <None Include="Resources\m_letter_letters_alphabet_icon_208998.png" />
+    <None Include="Resources\atm-icon_31876.png" />
+    <None Include="Resources\Golden_key.gif" />
+    <Content Include="LogsDB\BETAManagersLogs.txt" />
+    <Content Include="LogsDB\BSUIRManagersLogs.txt" />
+    <Content Include="LogsDB\FORESTManagersLogs.txt" />
     <Content Include="SystemDB\BETAManagers.txt" />
     <Content Include="SystemDB\BSUIRManagers.txt" />
     <Content Include="SystemDB\FORESTManagers.txt" />
