@@ -29,10 +29,11 @@ namespace OOP_Lab1_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.AccNumLabel = new System.Windows.Forms.Label();
             this.Logout_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.exitLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.companyButton = new System.Windows.Forms.my_Button();
@@ -43,6 +44,7 @@ namespace OOP_Lab1_Forms
             this.depositButton = new System.Windows.Forms.my_Button();
             this.AccountInfoButton = new System.Windows.Forms.my_Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.banTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,24 +83,24 @@ namespace OOP_Lab1_Forms
             this.panel2.Size = new System.Drawing.Size(571, 11);
             this.panel2.TabIndex = 49;
             // 
-            // label5
+            // exitLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Azure;
-            this.label5.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(542, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(27, 26);
-            this.label5.TabIndex = 53;
-            this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.exitLabel.AutoSize = true;
+            this.exitLabel.BackColor = System.Drawing.Color.Azure;
+            this.exitLabel.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitLabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.exitLabel.Location = new System.Drawing.Point(544, 0);
+            this.exitLabel.Name = "exitLabel";
+            this.exitLabel.Size = new System.Drawing.Size(27, 26);
+            this.exitLabel.TabIndex = 53;
+            this.exitLabel.Text = "X";
+            this.exitLabel.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.exitLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -143,6 +145,7 @@ namespace OOP_Lab1_Forms
             this.blockButton.TabIndex = 59;
             this.blockButton.Text = "BAN CARD";
             this.blockButton.UseVisualStyleBackColor = false;
+            this.blockButton.Click += new System.EventHandler(this.blockButton_Click);
             // 
             // transferButton
             // 
@@ -230,6 +233,10 @@ namespace OOP_Lab1_Forms
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
             // 
+            // banTimer
+            // 
+            this.banTimer.Tick += new System.EventHandler(this.banTimer_Tick);
+            // 
             // ClientHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,7 +275,7 @@ namespace OOP_Lab1_Forms
         private System.Windows.Forms.Label Logout_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label exitLabel;
         private System.Windows.Forms.my_Button depositButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
@@ -277,5 +284,6 @@ namespace OOP_Lab1_Forms
         private System.Windows.Forms.my_Button transferButton;
         private System.Windows.Forms.my_Button blockButton;
         private System.Windows.Forms.my_Button companyButton;
+        private System.Windows.Forms.Timer banTimer;
     }
 }

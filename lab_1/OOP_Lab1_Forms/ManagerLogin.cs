@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -38,7 +31,7 @@ namespace OOP_Lab1_Forms
         }
         private void backButton_Click(object sender, EventArgs e)
         {
-            ManagerLogin.ManagerAccountLogout();
+            ManagerAccountLogout();
             Login.ChooseBank();
 
             BankStartPage startPage = new BankStartPage();

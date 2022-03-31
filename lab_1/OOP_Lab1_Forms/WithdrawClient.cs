@@ -79,7 +79,9 @@ namespace OOP_Lab1_Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageRect message = new MessageRect();
+                MessageRect.exMessage = ex.Message;
+                message.Show();
             }
         }
 

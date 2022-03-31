@@ -74,5 +74,44 @@ namespace OOP_Lab1_Forms
             this.Hide();
             transfer.Show();
         }
+        private static int blockedTime = 150;
+        private void blockButton_Click(object sender, EventArgs e)
+        {
+            MessageRect message = new MessageRect();
+            MessageRect.exMessage = "YOU BLOCKED CARD ON 1 MINUTE!";
+            
+            message.Show();
+            banTimer.Start();
+
+            depositButton.Visible       = false;
+            withdrawButton.Visible      = false;
+            transferButton.Visible      = false;
+            balanceButton.Visible       = false;
+            Logout_label.Visible        = false;
+            exitLabel.Visible           = false;
+            AccountInfoButton.Visible   = false;
+            blockButton.Visible         = false;
+            companyButton.Visible       = false;
+        }
+
+        private void banTimer_Tick(object sender, EventArgs e)
+        {
+            blockedTime--;
+            if (blockedTime == 0)
+            {
+                banTimer.Stop();
+                blockedTime = 150;
+
+                depositButton.Visible       = true;
+                withdrawButton.Visible      = true;
+                transferButton.Visible      = true;
+                balanceButton.Visible       = true;
+                Logout_label.Visible        = true;
+                exitLabel.Visible           = true;
+                AccountInfoButton.Visible   = true;
+                blockButton.Visible         = true;
+                companyButton.Visible       = true;
+            }
+        }
     }
 }
