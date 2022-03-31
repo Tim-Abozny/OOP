@@ -121,7 +121,7 @@ namespace OOP_Lab1_Forms
             }
             else
             {
-                Home home = new Home();
+                ClientHome home = new ClientHome();
                 this.Hide();
                 home.Show();
             }

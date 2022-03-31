@@ -119,15 +119,5 @@ namespace OOP_Lab1_Forms.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap m_letter_letters_alphabet_icon_208998 {
-            get {
-                object obj = ResourceManager.GetObject("m_letter_letters_alphabet_icon_208998", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
 {
-    public partial class Home : Form
+    public partial class ClientHome : Form
     {
-        public Home()
+        public ClientHome()
         {
             InitializeComponent();
         }
@@ -59,6 +59,20 @@ namespace OOP_Lab1_Forms
             WithdrawClient withdraw = new WithdrawClient();
             this.Hide();
             withdraw.Show();
+        }
+
+        private void balanceButton_Click(object sender, EventArgs e)
+        {
+            AccBalance balance = new AccBalance();
+            this.Hide();
+            balance.Show();
+        }
+
+        private void transferButton_Click(object sender, EventArgs e)
+        {
+            Transfer transfer = new Transfer();
+            this.Hide();
+            transfer.Show();
         }
     }
 }

@@ -134,5 +134,31 @@ namespace OOP_Lab1_Forms
 
             currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
         }
+        public static void BalanceOperaion(double sum, string operation, string acceptorName, string acceptorSurname, int acceptorID)
+        {
+            LogPath();
+
+            string clientOperation = $"{Login.ClientIDst}/{Login.ClientNamest}/{Login.ClientSurnamest}/{operation}/{sum}/{acceptorID}/{acceptorName}/{acceptorSurname}/" + Environment.NewLine;
+            File.AppendAllText(currentLogsPath, clientOperation);
+
+            currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
+        }
+        public static void RewriteDB(string role, string[] DB)
+        {
+            if (role == "client")
+            {
+                CurrentPath();
+
+                File.WriteAllLines(currentPath, DB);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+            }
+            else
+            {
+                CurrentPath("manager");
+
+                File.WriteAllLines(currentPath, DB);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+            }
+        }
     }
 }
