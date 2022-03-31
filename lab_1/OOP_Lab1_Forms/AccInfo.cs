@@ -12,7 +12,7 @@ namespace OOP_Lab1_Forms
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
+            ClientHome home = new ClientHome();
             this.Hide();
             home.Show();
         }

@@ -23,10 +23,54 @@ namespace OOP_Lab1_Forms
                 {
                     MessageBox.Show("CORRECT SUM: | 0 < SUM < 10000 |\nTRY AGAIN");
                 }
-                else if (Convert.ToInt32(WithrdawTB.Text) < Login.ClientBalancest)
+                else if (Convert.ToDouble(WithrdawTB.Text) < Login.ClientBalancest)
                 {
-                    Login.ClientBalancest -= Convert.ToInt32(WithrdawTB.Text);
-                    FileOperations.WriteOperaion(Convert.ToInt32(WithrdawTB.Text), "WITHDRAW");
+                    Login.ClientBalancest -= Convert.ToDouble(WithrdawTB.Text);
+                    FileOperations.BalanceOperaion(Convert.ToDouble(WithrdawTB.Text), "WITHDRAW");
+
+                    //rewrite DB
+                    string[] clientsData = FileOperations.GetClientsData("client");
+                    string depClient = "";
+                    int index = 0;
+                    string tempData = "";
+                    foreach (var client in clientsData)
+                    {
+                        while (client[index] != '/')
+                        {
+                            tempData += client[index];
+                            index++;
+                        }
+                        if (Convert.ToInt32(tempData) == Login.ClientIDst)
+                        {
+                            index = 0; tempData = "";
+                            int slashCount = 0;
+
+                            while (slashCount != 5)// find index where start balance
+                            {
+                                depClient += client[index];
+                                if (client[index] == '/')
+                                {
+                                    slashCount++;
+                                }
+                                index++;
+                            }
+
+                            while (client[index] != '/') //oldBalance -> tempData
+                            {
+                                tempData += client[index];
+                                index++;
+                            }
+                            depClient += (Convert.ToDouble(tempData) - Convert.ToDouble(WithrdawTB.Text)).ToString() + '/';
+                        }
+                        tempData = ""; index = 0;
+                    }//end foreach
+                    clientsData[Login.ClientIDst] = depClient;
+                    FileOperations.RewriteDB("client", clientsData);
+                    MessageBox.Show("OPERATION SUCCESSFUL");
+
+                    ClientHome home = new ClientHome();
+                    this.Hide();
+                    home.Show();
                 }
                 else
                 {
@@ -35,13 +79,15 @@ namespace OOP_Lab1_Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageRect message = new MessageRect();
+                MessageRect.exMessage = ex.Message;
+                message.Show();
             }
         }
 
         private void label13_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
+            ClientHome home = new ClientHome();
             this.Hide();
             home.Show();
         }

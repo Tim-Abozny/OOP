@@ -22,6 +22,24 @@ namespace OOP_Lab1_Forms
                 currentPath += "FORESTClientsDB.txt";
             }
         }
+        public static void CurrentPath(string role)
+        {
+            if (role == "manager")
+            {
+                if (BankStartPage.BSUIR_Login == 1)
+                {
+                    currentPath += "BSUIRManagers.txt";
+                }
+                if (BankStartPage.BETA_Login == 1)
+                {
+                    currentPath += "BETAManagers.txt";
+                }
+                if (BankStartPage.FOREST_Login == 1)
+                {
+                    currentPath += "FORESTManagers.txt";
+                }
+            }
+        }
         public static void LogPath()
         {
             if (BankStartPage.BSUIR_Login == 1)
@@ -59,22 +77,26 @@ namespace OOP_Lab1_Forms
             }
             currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
         }
-        public static string[] GetClientsData()
+        public static string[] GetClientsData(string role)
         {
-            CurrentPath();
+            if (role == "client")
+            {
+                CurrentPath();
 
-            string[] clientsData = File.ReadAllLines(currentPath);
-            currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
-            return clientsData;
+                string[] clientsData = File.ReadAllLines(currentPath);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+                return clientsData;
+            }
+            else
+            {
+                CurrentPath("manager");
+
+                string[] managersData = File.ReadAllLines(currentPath);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+                return managersData;
+            }
         }
-        public static void AddClient
-            (
-                string ClientName,
-                string ClientSurname,
-                string ClientLogin,
-                int ClientID, 
-                string ClientPIN
-            )
+        public static void AddClient(string ClientName, string ClientSurname,string ClientLogin, int ClientID,string ClientPIN)
         {
             string clientData = $"{ClientID}/{ClientName}/{ClientSurname}/{ClientLogin}/{ClientPIN}/0/" + Environment.NewLine;
 
@@ -103,7 +125,7 @@ namespace OOP_Lab1_Forms
 
             return ClientFileID;
         }
-        public static void WriteOperaion(double sum, string operation)
+        public static void BalanceOperaion(double sum, string operation)
         {
             LogPath();
 
@@ -111,6 +133,32 @@ namespace OOP_Lab1_Forms
             File.AppendAllText(currentLogsPath, clientOperation);
 
             currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
+        }
+        public static void BalanceOperaion(double sum, string operation, string acceptorName, string acceptorSurname, int acceptorID)
+        {
+            LogPath();
+
+            string clientOperation = $"{Login.ClientIDst}/{Login.ClientNamest}/{Login.ClientSurnamest}/{operation}/{sum}/{acceptorID}/{acceptorName}/{acceptorSurname}/" + Environment.NewLine;
+            File.AppendAllText(currentLogsPath, clientOperation);
+
+            currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
+        }
+        public static void RewriteDB(string role, string[] DB)
+        {
+            if (role == "client")
+            {
+                CurrentPath();
+
+                File.WriteAllLines(currentPath, DB);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+            }
+            else
+            {
+                CurrentPath("manager");
+
+                File.WriteAllLines(currentPath, DB);
+                currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+            }
         }
     }
 }

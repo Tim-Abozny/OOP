@@ -38,10 +38,10 @@ namespace OOP_Lab1_Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginButton = new System.Windows.Forms.my_Button();
             this.my_Button1 = new System.Windows.Forms.my_Button();
-            this.my_Button2 = new System.Windows.Forms.my_Button();
+            this.managerButton = new System.Windows.Forms.my_Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -145,16 +145,6 @@ namespace OOP_Lab1_Forms
             this.panel2.Size = new System.Drawing.Size(501, 11);
             this.panel2.TabIndex = 50;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OOP_Lab1_Forms.Properties.Resources.atm_machine_finance_cash_withdraw_money_icon_153132;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 107);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.Color.MidnightBlue;
@@ -185,19 +175,30 @@ namespace OOP_Lab1_Forms
             this.my_Button1.UseVisualStyleBackColor = false;
             this.my_Button1.Click += new System.EventHandler(this.my_Button1_Click);
             // 
-            // my_Button2
+            // managerButton
             // 
-            this.my_Button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.my_Button2.Font = new System.Drawing.Font("Russo One", 8F);
-            this.my_Button2.ForeColor = System.Drawing.Color.White;
-            this.my_Button2.Location = new System.Drawing.Point(80, 280);
-            this.my_Button2.Name = "my_Button2";
-            this.my_Button2.Rounding = 50;
-            this.my_Button2.RoundingEnable = true;
-            this.my_Button2.Size = new System.Drawing.Size(79, 30);
-            this.my_Button2.TabIndex = 52;
-            this.my_Button2.Text = "MANAGER";
-            this.my_Button2.UseVisualStyleBackColor = false;
+            this.managerButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.managerButton.Font = new System.Drawing.Font("Russo One", 8F);
+            this.managerButton.ForeColor = System.Drawing.Color.White;
+            this.managerButton.Location = new System.Drawing.Point(80, 280);
+            this.managerButton.Name = "managerButton";
+            this.managerButton.Rounding = 50;
+            this.managerButton.RoundingEnable = true;
+            this.managerButton.Size = new System.Drawing.Size(79, 30);
+            this.managerButton.TabIndex = 52;
+            this.managerButton.Text = "MANAGER";
+            this.managerButton.UseVisualStyleBackColor = false;
+            this.managerButton.Click += new System.EventHandler(this.managerButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OOP_Lab1_Forms.Properties.Resources.atm_machine_finance_cash_withdraw_money_icon_153132;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 107);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -205,7 +206,7 @@ namespace OOP_Lab1_Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(501, 323);
-            this.Controls.Add(this.my_Button2);
+            this.Controls.Add(this.managerButton);
             this.Controls.Add(this.my_Button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.loginButton);
@@ -242,7 +243,7 @@ namespace OOP_Lab1_Forms
         private System.Windows.Forms.my_Button loginButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.my_Button my_Button1;
-        private System.Windows.Forms.my_Button my_Button2;
+        private System.Windows.Forms.my_Button managerButton;
     }
 }
 

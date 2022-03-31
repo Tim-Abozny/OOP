@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccBalance.Designer.cs">
+      <DependentUpon>AccBalance.cs</DependentUpon>
+    </Compile>
     <Compile Include="AccInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,17 +71,23 @@
       <DependentUpon>DepositClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Drawer.cs" />
-    <Compile Include="Home.cs">
+    <Compile Include="ClientHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="ClientHome.Designer.cs">
+      <DependentUpon>ClientHome.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManagerLogin.Designer.cs">
       <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageRect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageRect.Designer.cs">
+      <DependentUpon>MessageRect.cs</DependentUpon>
     </Compile>
     <Compile Include="my_Button.cs">
       <SubType>Component</SubType>
@@ -96,12 +108,21 @@
     <Compile Include="SignUpClient.Designer.cs">
       <DependentUpon>SignUpClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
     <Compile Include="WithdrawClient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WithdrawClient.Designer.cs">
       <DependentUpon>WithdrawClient.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccBalance.resx">
+      <DependentUpon>AccBalance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AccInfo.resx">
       <DependentUpon>AccInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,11 +132,17 @@
     <EmbeddedResource Include="DepositClient.resx">
       <DependentUpon>DepositClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="ClientHome.resx">
+      <DependentUpon>ClientHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageRect.resx">
+      <DependentUpon>MessageRect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +156,9 @@
     </Compile>
     <EmbeddedResource Include="SignUpClient.resx">
       <DependentUpon>SignUpClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WithdrawClient.resx">
       <DependentUpon>WithdrawClient.cs</DependentUpon>
@@ -147,7 +177,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClientRequests\CreditRequests.txt" />
+    <Content Include="ClientRequests\FORESTRequests.txt" />
+    <Content Include="ClientRequests\BSUIRRequests.txt" />
+    <Content Include="ClientRequests\BETARequests.txt" />
+    <None Include="Resources\atm-icon_31876.png" />
+    <None Include="Resources\Golden_key.gif" />
+    <Content Include="LogsDB\BETAManagersLogs.txt" />
+    <Content Include="LogsDB\BSUIRManagersLogs.txt" />
+    <Content Include="LogsDB\FORESTManagersLogs.txt" />
     <Content Include="SystemDB\BETAManagers.txt" />
     <Content Include="SystemDB\BSUIRManagers.txt" />
     <Content Include="SystemDB\FORESTManagers.txt" />

@@ -22,7 +22,7 @@ namespace OOP_Lab1_Forms
         public static double ClientBalancest = 0;
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string[] clientsData = FileOperations.GetClientsData();
+            string[] clientsData = FileOperations.GetClientsData("client");
             int slashCount = 0;
             string clientLogin = "";
             string clientPass = "";
@@ -121,7 +121,7 @@ namespace OOP_Lab1_Forms
             }
             else
             {
-                Home home = new Home();
+                ClientHome home = new ClientHome();
                 this.Hide();
                 home.Show();
             }
@@ -157,6 +157,13 @@ namespace OOP_Lab1_Forms
             BankStartPage startPage = new BankStartPage();
             this.Hide();
             startPage.Show();
+        }
+
+        private void managerButton_Click(object sender, EventArgs e)
+        {
+            ManagerLogin mLogin = new ManagerLogin();
+            this.Hide();
+            mLogin.Show();
         }
     }
 }

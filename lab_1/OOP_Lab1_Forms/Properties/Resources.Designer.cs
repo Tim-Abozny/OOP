@@ -63,6 +63,16 @@ namespace OOP_Lab1_Forms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap atm_icon_31876 {
+            get {
+                object obj = ResourceManager.GetObject("atm-icon_31876", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap atm_machine_finance_cash_withdraw_money_icon_153132 {
             get {
                 object obj = ResourceManager.GetObject("atm_machine_finance_cash_withdraw_money_icon_153132", resourceCulture);
@@ -96,6 +106,16 @@ namespace OOP_Lab1_Forms.Properties {
         internal static System.Drawing.Bitmap bank_icon_129525 {
             get {
                 object obj = ResourceManager.GetObject("bank_icon_129525", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Golden_key {
+            get {
+                object obj = ResourceManager.GetObject("Golden_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

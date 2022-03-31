@@ -17,7 +17,7 @@ namespace OOP_Lab1_Forms
 
         private void Back_label_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
+            ClientHome home = new ClientHome();
             this.Hide();
             home.Show();
         }
@@ -32,13 +32,59 @@ namespace OOP_Lab1_Forms
                 }
                 else
                 {
-                    Login.ClientBalancest += Convert.ToInt32(DepositTB.Text);
-                    FileOperations.WriteOperaion(Convert.ToInt32(DepositTB.Text), "DEPOSIT");
+                    Login.ClientBalancest += Convert.ToDouble(DepositTB.Text);
+                    FileOperations.BalanceOperaion(Convert.ToDouble(DepositTB.Text), "DEPOSIT");
+
+                    //rewrite DB
+                    string[] clientsData = FileOperations.GetClientsData("client");
+                    string depClient = "";
+                    int index = 0;
+                    string tempData = "";
+                    foreach (var client in clientsData)
+                    {
+                        while (client[index] != '/')
+                        {
+                            tempData += client[index];
+                            index++;
+                        }
+                        if (Convert.ToInt32(tempData) == Login.ClientIDst)
+                        {
+                            index = 0; tempData = "";
+                            int slashCount = 0;
+
+                            while (slashCount != 5)// find index where start balance
+                            {
+                                depClient += client[index];
+                                if (client[index] == '/')
+                                {
+                                    slashCount++;
+                                }
+                                index++;
+                            }
+
+                            while (client[index] != '/') //oldBalance -> tempData
+                            {
+                                tempData += client[index];
+                                index++;
+                            }
+                            depClient += (Convert.ToDouble(tempData) + Convert.ToDouble(DepositTB.Text)).ToString() + '/';
+                        }
+                        tempData = ""; index = 0;
+                    }//end foreach
+                    clientsData[Login.ClientIDst] = depClient;
+                    FileOperations.RewriteDB("client", clientsData);
+                    MessageBox.Show("OPERATION SUCCESSFUL");
+
+                    ClientHome home = new ClientHome();
+                    this.Hide();
+                    home.Show();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageRect message = new MessageRect();
+                MessageRect.exMessage = ex.Message;
+                message.Show();
             }
         }
     }
