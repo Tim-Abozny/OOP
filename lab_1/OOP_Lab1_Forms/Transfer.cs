@@ -121,6 +121,46 @@ namespace OOP_Lab1_Forms
             
             return accepterWithNewBalance;
         }
+        private string resultSender()
+        {
+            //rewrite DB
+            string[] clientsData = FileOperations.GetClientsData("client");
+            string transClient = "";
+            int index = 0;
+            string tempData = "";
+            foreach (var client in clientsData)
+            {
+                while (client[index] != '/')
+                {
+                    tempData += client[index];
+                    index++;
+                }
+                if (Convert.ToInt32(tempData) == Login.ClientIDst)
+                {
+                    index = 0; tempData = "";
+                    int slashCount = 0;
+
+                    while (slashCount != 5)// find index where start balance
+                    {
+                        transClient += client[index];
+                        if (client[index] == '/')
+                        {
+                            slashCount++;
+                        }
+                        index++;
+                    }
+
+                    while (client[index] != '/') //oldBalance -> tempData
+                    {
+                        tempData += client[index];
+                        index++;
+                    }
+                    transClient += (Convert.ToDouble(tempData) - Convert.ToDouble(TransferTB.Text)).ToString() + '/';
+                }
+                tempData = ""; index = 0;
+            }//end foreach
+            return transClient;
+        }
 
         private void transferButton_Click(object sender, EventArgs e)
         {
@@ -130,17 +170,20 @@ namespace OOP_Lab1_Forms
             string aceptSurname = "";
 
             string accepter = resultAccepter();
+            string _sender = resultSender();
             while (accepter[index] != '/')
             {
                 tempData += accepter[index];
                 index++;
             }
             int id = Convert.ToInt32(tempData);
+            index++;
             while (accepter[index] != '/')
             {
                 aceptName += accepter[index];
                 index++;
             }
+            index++;
             while (accepter[index] != '/')
             {
                 aceptSurname += accepter[index];
@@ -149,6 +192,7 @@ namespace OOP_Lab1_Forms
 
             string[] clientsData = FileOperations.GetClientsData("client");
             clientsData[id] = accepter; // db to rewrite
+            clientsData[Login.ClientIDst] = _sender;
 
             try
             {
@@ -159,13 +203,9 @@ namespace OOP_Lab1_Forms
                 else if (Convert.ToDouble(TransferTB.Text) < Login.ClientBalancest)
                 {
                     Login.ClientBalancest -= Convert.ToDouble(TransferTB.Text);
-
-                    FileOperations.RewriteDB("client", clientsData);
-
                     FileOperations.BalanceOperaion(Convert.ToDouble(ResultTB.Text), "TRANSFER", aceptName, aceptSurname, id);
 
-
-
+                    FileOperations.RewriteDB("client", clientsData);
                     MessageBox.Show("OPERATION SUCCESSFUL");
 
                     ClientHome home = new ClientHome();
