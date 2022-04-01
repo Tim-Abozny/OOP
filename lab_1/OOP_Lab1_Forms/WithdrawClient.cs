@@ -30,7 +30,7 @@ namespace OOP_Lab1_Forms
 
                     //rewrite DB
                     string[] clientsData = FileOperations.GetClientsData("client");
-                    string depClient = "";
+                    string withClient = "";
                     int index = 0;
                     string tempData = "";
                     foreach (var client in clientsData)
@@ -47,7 +47,7 @@ namespace OOP_Lab1_Forms
 
                             while (slashCount != 5)// find index where start balance
                             {
-                                depClient += client[index];
+                                withClient += client[index];
                                 if (client[index] == '/')
                                 {
                                     slashCount++;
@@ -60,18 +60,18 @@ namespace OOP_Lab1_Forms
                                 tempData += client[index];
                                 index++;
                             }
-                            depClient += (Convert.ToDouble(tempData) - Convert.ToDouble(WithrdawTB.Text)).ToString() + '/';
+                            withClient += (Convert.ToDouble(tempData) - Convert.ToDouble(WithrdawTB.Text)).ToString() + '/';
                         }
                         tempData = ""; index = 0;
                     }//end foreach
-                    clientsData[Login.ClientIDst] = depClient;
+                    clientsData[Login.ClientIDst] = withClient;
                     FileOperations.RewriteDB("client", clientsData);
                     MessageBox.Show("OPERATION SUCCESSFUL");
 
                     ClientHome home = new ClientHome();
                     this.Hide();
                     home.Show();
-                }
+                }//end rewrite db
                 else
                 {
                     MessageBox.Show("YOU ARE NOT RICH");
