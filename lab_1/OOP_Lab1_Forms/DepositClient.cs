@@ -18,7 +18,7 @@ namespace OOP_Lab1_Forms
         private void Back_label_Click(object sender, EventArgs e)
         {
             ClientHome home = new ClientHome();
-            this.Hide();
+            this.Close();
             home.Show();
         }
 
@@ -76,7 +76,7 @@ namespace OOP_Lab1_Forms
                     MessageBox.Show("OPERATION SUCCESSFUL");
 
                     ClientHome home = new ClientHome();
-                    this.Hide();
+                    this.Close();
                     home.Show();
                 }
             }

@@ -29,6 +29,7 @@ namespace OOP_Lab1_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccBalance));
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,8 +49,9 @@ namespace OOP_Lab1_Forms
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 89);
+            this.panel1.Size = new System.Drawing.Size(500, 110);
             this.panel1.TabIndex = 85;
             // 
             // exitLabel
@@ -58,9 +60,10 @@ namespace OOP_Lab1_Forms
             this.exitLabel.BackColor = System.Drawing.Color.Azure;
             this.exitLabel.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitLabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.exitLabel.Location = new System.Drawing.Point(346, 0);
+            this.exitLabel.Location = new System.Drawing.Point(461, 0);
+            this.exitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(27, 26);
+            this.exitLabel.Size = new System.Drawing.Size(33, 33);
             this.exitLabel.TabIndex = 8;
             this.exitLabel.Text = "X";
             this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
@@ -70,9 +73,10 @@ namespace OOP_Lab1_Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(25, 23);
+            this.label1.Location = new System.Drawing.Point(33, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 48);
+            this.label1.Size = new System.Drawing.Size(430, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "B A N K  S Y S T E M";
             // 
@@ -81,9 +85,10 @@ namespace OOP_Lab1_Forms
             this.balanceNumLabel.AutoSize = true;
             this.balanceNumLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.balanceNumLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.balanceNumLabel.Location = new System.Drawing.Point(220, 168);
+            this.balanceNumLabel.Location = new System.Drawing.Point(293, 207);
+            this.balanceNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.balanceNumLabel.Name = "balanceNumLabel";
-            this.balanceNumLabel.Size = new System.Drawing.Size(111, 19);
+            this.balanceNumLabel.Size = new System.Drawing.Size(140, 25);
             this.balanceNumLabel.TabIndex = 84;
             this.balanceNumLabel.Text = "BalanceNum";
             // 
@@ -92,9 +97,10 @@ namespace OOP_Lab1_Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Russo One", 12F);
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(5, 168);
+            this.label2.Location = new System.Drawing.Point(7, 207);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 19);
+            this.label2.Size = new System.Drawing.Size(230, 25);
             this.label2.TabIndex = 83;
             this.label2.Text = "AVAILABLE BALANCE:";
             // 
@@ -103,9 +109,10 @@ namespace OOP_Lab1_Forms
             this.backLabel.AutoSize = true;
             this.backLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.backLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.backLabel.Location = new System.Drawing.Point(161, 222);
+            this.backLabel.Location = new System.Drawing.Point(215, 273);
+            this.backLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.backLabel.Name = "backLabel";
-            this.backLabel.Size = new System.Drawing.Size(52, 19);
+            this.backLabel.Size = new System.Drawing.Size(66, 25);
             this.backLabel.TabIndex = 80;
             this.backLabel.Text = "BACK";
             this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
@@ -114,9 +121,10 @@ namespace OOP_Lab1_Forms
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 244);
+            this.panel2.Location = new System.Drawing.Point(0, 300);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 11);
+            this.panel2.Size = new System.Drawing.Size(500, 14);
             this.panel2.TabIndex = 79;
             // 
             // accNumLabel
@@ -124,9 +132,10 @@ namespace OOP_Lab1_Forms
             this.accNumLabel.AutoSize = true;
             this.accNumLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.accNumLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.accNumLabel.Location = new System.Drawing.Point(220, 120);
+            this.accNumLabel.Location = new System.Drawing.Point(293, 148);
+            this.accNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.accNumLabel.Name = "accNumLabel";
-            this.accNumLabel.Size = new System.Drawing.Size(120, 19);
+            this.accNumLabel.Size = new System.Drawing.Size(150, 25);
             this.accNumLabel.TabIndex = 87;
             this.accNumLabel.Text = "AccNumLabel";
             // 
@@ -135,18 +144,19 @@ namespace OOP_Lab1_Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Russo One", 12F);
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(5, 120);
+            this.label4.Location = new System.Drawing.Point(7, 148);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 19);
+            this.label4.Size = new System.Drawing.Size(207, 25);
             this.label4.TabIndex = 86;
             this.label4.Text = "ACCOUNT NUMBER:";
             // 
             // AccBalance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(375, 255);
+            this.ClientSize = new System.Drawing.Size(500, 314);
             this.Controls.Add(this.accNumLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -155,6 +165,8 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.backLabel);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccBalance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AccBalance";

@@ -69,7 +69,7 @@ namespace OOP_Lab1_Forms
                     MessageBox.Show("OPERATION SUCCESSFUL");
 
                     ClientHome home = new ClientHome();
-                    this.Hide();
+                    this.Close();
                     home.Show();
                 }//end rewrite db
                 else
@@ -88,7 +88,7 @@ namespace OOP_Lab1_Forms
         private void label13_Click(object sender, EventArgs e)
         {
             ClientHome home = new ClientHome();
-            this.Hide();
+            this.Close();
             home.Show();
         }
 

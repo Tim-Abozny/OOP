@@ -29,6 +29,7 @@ namespace OOP_Lab1_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccInfo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +55,7 @@ namespace OOP_Lab1_Forms
             this.panel1.Controls.Add(this.label5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(496, 110);
             this.panel1.TabIndex = 16;
@@ -91,7 +92,7 @@ namespace OOP_Lab1_Forms
             this.loginButton.Font = new System.Drawing.Font("Russo One", 12F);
             this.loginButton.ForeColor = System.Drawing.Color.White;
             this.loginButton.Location = new System.Drawing.Point(124, 348);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Rounding = 50;
             this.loginButton.RoundingEnable = true;
@@ -107,7 +108,7 @@ namespace OOP_Lab1_Forms
             this.Pin_TB.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Pin_TB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.Pin_TB.Location = new System.Drawing.Point(171, 293);
-            this.Pin_TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pin_TB.Margin = new System.Windows.Forms.Padding(4);
             this.Pin_TB.Name = "Pin_TB";
             this.Pin_TB.ReadOnly = true;
             this.Pin_TB.Size = new System.Drawing.Size(255, 32);
@@ -131,7 +132,7 @@ namespace OOP_Lab1_Forms
             this.ID_TB.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ID_TB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.ID_TB.Location = new System.Drawing.Point(171, 252);
-            this.ID_TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ID_TB.Margin = new System.Windows.Forms.Padding(4);
             this.ID_TB.Name = "ID_TB";
             this.ID_TB.ReadOnly = true;
             this.ID_TB.Size = new System.Drawing.Size(255, 32);
@@ -155,7 +156,7 @@ namespace OOP_Lab1_Forms
             this.Surname_TB.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Surname_TB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.Surname_TB.Location = new System.Drawing.Point(171, 212);
-            this.Surname_TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Surname_TB.Margin = new System.Windows.Forms.Padding(4);
             this.Surname_TB.Name = "Surname_TB";
             this.Surname_TB.ReadOnly = true;
             this.Surname_TB.Size = new System.Drawing.Size(255, 32);
@@ -179,7 +180,7 @@ namespace OOP_Lab1_Forms
             this.Name_TB.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name_TB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.Name_TB.Location = new System.Drawing.Point(171, 171);
-            this.Name_TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name_TB.Margin = new System.Windows.Forms.Padding(4);
             this.Name_TB.Name = "Name_TB";
             this.Name_TB.ReadOnly = true;
             this.Name_TB.Size = new System.Drawing.Size(255, 32);
@@ -203,7 +204,7 @@ namespace OOP_Lab1_Forms
             this.ClientLogin_TB.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ClientLogin_TB.ForeColor = System.Drawing.Color.MidnightBlue;
             this.ClientLogin_TB.Location = new System.Drawing.Point(171, 130);
-            this.ClientLogin_TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientLogin_TB.Margin = new System.Windows.Forms.Padding(4);
             this.ClientLogin_TB.Name = "ClientLogin_TB";
             this.ClientLogin_TB.ReadOnly = true;
             this.ClientLogin_TB.Size = new System.Drawing.Size(255, 32);
@@ -226,7 +227,7 @@ namespace OOP_Lab1_Forms
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 392);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(496, 14);
             this.panel2.TabIndex = 51;
@@ -251,7 +252,8 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.ClientLogin_TB);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AccInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AccInfo";
