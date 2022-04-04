@@ -7,21 +7,7 @@ namespace OOP_Lab1_Forms
     {
         public static string currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
         public static string currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
-        public static void CurrentPath()
-        {
-            if (BankStartPage.BSUIR_Login == 1)
-            {
-                currentPath += "BSUIRClientsDB.txt";
-            }
-            if (BankStartPage.BETA_Login == 1)
-            {
-                currentPath += "BETAClientsDB.txt";
-            }
-            if (BankStartPage.FOREST_Login == 1)
-            {
-                currentPath += "FORESTClientsDB.txt";
-            }
-        }
+        public static string requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
         public static void CurrentPath(string role)
         {
             if (role == "manager")
@@ -37,6 +23,21 @@ namespace OOP_Lab1_Forms
                 if (BankStartPage.FOREST_Login == 1)
                 {
                     currentPath += "FORESTManagers.txt";
+                }
+            }
+            else if (role == "client")
+            {
+                if (BankStartPage.BSUIR_Login == 1)
+                {
+                    currentPath += "BSUIRClientsDB.txt";
+                }
+                if (BankStartPage.BETA_Login == 1)
+                {
+                    currentPath += "BETAClientsDB.txt";
+                }
+                if (BankStartPage.FOREST_Login == 1)
+                {
+                    currentPath += "FORESTClientsDB.txt";
                 }
             }
         }
@@ -55,33 +56,26 @@ namespace OOP_Lab1_Forms
                 currentLogsPath += "FORESTLogs.txt";
             }
         }
-        public static void sendCreditClientRequest(int id, double wantCash, int creditTime)
+        public static void RequestPath()
         {
             if (BankStartPage.BSUIR_Login == 1)
             {
-                currentPath += "BSUIRClientsDB.txt";
+                requestPath += "BSUIRRequests.txt";
             }
             if (BankStartPage.BETA_Login == 1)
             {
-                currentPath += "BETAClientsDB.txt";
+                requestPath += "BETARequests.txt";
             }
             if (BankStartPage.FOREST_Login == 1)
             {
-                currentPath += "FORESTClientsDB.txt";
+                requestPath += "FORESTRequests.txt";
             }
-
-            string fileRequest = $"{id}/{wantCash}/{creditTime}/";
-            if (!File.Exists(currentPath))
-            {
-                File.WriteAllText(currentPath, fileRequest);
-            }
-            currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
         }
         public static string[] GetClientsData(string role)
         {
             if (role == "client")
             {
-                CurrentPath();
+                CurrentPath("client");
 
                 string[] clientsData = File.ReadAllLines(currentPath);
                 currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
@@ -100,14 +94,14 @@ namespace OOP_Lab1_Forms
         {
             string clientData = $"{ClientID}/{ClientName}/{ClientSurname}/{ClientLogin}/{ClientPIN}/0/" + Environment.NewLine;
 
-            CurrentPath();
+            CurrentPath("client");
 
             File.AppendAllText(currentPath, clientData);
             currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
         }
         public static int GetClientID()
         {
-            CurrentPath();
+            CurrentPath("client");
 
             int ClientFileID = 0;
 
@@ -147,7 +141,7 @@ namespace OOP_Lab1_Forms
         {
             if (role == "client")
             {
-                CurrentPath();
+                CurrentPath("client");
 
                 File.WriteAllLines(currentPath, DB);
                 currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
@@ -159,6 +153,41 @@ namespace OOP_Lab1_Forms
                 File.WriteAllLines(currentPath, DB);
                 currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
             }
+        }
+        public static void sendSalaryClientRequest(int id, double sum)
+        {
+            RequestPath();
+
+            string clientRequest = $"SALARY/{id}/{sum}/" + Environment.NewLine;
+            File.AppendAllText(requestPath, clientRequest);
+
+            requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
+        }
+        public static void sendCredInstClientRequest(string operation, int id, double sum, int period, double payBackSum)
+        {
+            //SALARY/ID/SUM/PERIOD/PAYBACKSUM/
+            RequestPath();
+            if (operation == "CREDIT")
+            {
+                string clientRequest = $"CREDIT/{id}/{sum}/{period}/{payBackSum}/" + Environment.NewLine;
+                File.AppendAllText(requestPath, clientRequest);
+            }
+            else
+            {
+                string clientRequest = $"INSTALLMENT/{id}/{sum}/{period}/{payBackSum}/" + Environment.NewLine;
+                File.AppendAllText(requestPath, clientRequest);
+            }
+
+            requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
+        }
+        public static string[] GetClientsRequests()
+        {
+                RequestPath();
+
+                string[] clientsRequests = File.ReadAllLines(requestPath);
+                requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
+                
+                return clientsRequests;
         }
     }
 }
