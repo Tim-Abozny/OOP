@@ -83,15 +83,15 @@ namespace OOP_Lab1_Forms
             message.Show();
             banTimer.Start();
 
-            depositButton.Visible       = false;
-            withdrawButton.Visible      = false;
-            transferButton.Visible      = false;
-            balanceButton.Visible       = false;
-            Logout_label.Visible        = false;
-            exitLabel.Visible           = false;
-            AccountInfoButton.Visible   = false;
-            blockButton.Visible         = false;
-            companyButton.Visible       = false;
+            depositButton.Visible = false;
+            withdrawButton.Visible = false;
+            transferButton.Visible = false;
+            balanceButton.Visible = false;
+            Logout_label.Visible = false;
+            exitLabel.Visible = false;
+            AccountInfoButton.Visible = false;
+            blockButton.Visible = false;
+            companyButton.Visible = false;
         }
 
         private void banTimer_Tick(object sender, EventArgs e)
@@ -102,16 +102,23 @@ namespace OOP_Lab1_Forms
                 banTimer.Stop();
                 blockedTime = 150;
 
-                depositButton.Visible       = true;
-                withdrawButton.Visible      = true;
-                transferButton.Visible      = true;
-                balanceButton.Visible       = true;
-                Logout_label.Visible        = true;
-                exitLabel.Visible           = true;
-                AccountInfoButton.Visible   = true;
-                blockButton.Visible         = true;
-                companyButton.Visible       = true;
+                depositButton.Visible = true;
+                withdrawButton.Visible = true;
+                transferButton.Visible = true;
+                balanceButton.Visible = true;
+                Logout_label.Visible = true;
+                exitLabel.Visible = true;
+                AccountInfoButton.Visible = true;
+                blockButton.Visible = true;
+                companyButton.Visible = true;
             }
+        }
+
+        private void companyButton_Click(object sender, EventArgs e)
+        {
+            CompanySendRequest company = new CompanySendRequest();
+            this.Hide();
+            company.Show();
         }
     }
 }

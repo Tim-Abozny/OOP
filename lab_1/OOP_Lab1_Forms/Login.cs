@@ -135,12 +135,12 @@ namespace OOP_Lab1_Forms
         }
         public static void AccountLogout()
         {
-            ClientIDst                  = -1;
-            ClientPinst                 = "";
-            ClientNamest                = "";
-            ClientSurnamest             = "";
-            ClientLoginst               = "";
-            ClientBalancest             = 0;
+            ClientIDst = -1;
+            ClientPinst = "";
+            ClientNamest = "";
+            ClientSurnamest = "";
+            ClientLoginst = "";
+            ClientBalancest = 0;
         }
         public static void ChooseBank()
         {

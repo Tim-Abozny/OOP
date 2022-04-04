@@ -29,6 +29,7 @@ namespace OOP_Lab1_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transfer));
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,8 +54,9 @@ namespace OOP_Lab1_Forms
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 89);
+            this.panel1.Size = new System.Drawing.Size(528, 110);
             this.panel1.TabIndex = 85;
             // 
             // exitLabel
@@ -63,9 +65,10 @@ namespace OOP_Lab1_Forms
             this.exitLabel.BackColor = System.Drawing.Color.Azure;
             this.exitLabel.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitLabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.exitLabel.Location = new System.Drawing.Point(368, 0);
+            this.exitLabel.Location = new System.Drawing.Point(491, 0);
+            this.exitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(27, 26);
+            this.exitLabel.Size = new System.Drawing.Size(33, 33);
             this.exitLabel.TabIndex = 8;
             this.exitLabel.Text = "X";
             this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
@@ -75,9 +78,10 @@ namespace OOP_Lab1_Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(35, 26);
+            this.label1.Location = new System.Drawing.Point(47, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 48);
+            this.label1.Size = new System.Drawing.Size(430, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "B A N K  S Y S T E M";
             // 
@@ -86,9 +90,10 @@ namespace OOP_Lab1_Forms
             this.BalanceNumLabel.AutoSize = true;
             this.BalanceNumLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.BalanceNumLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.BalanceNumLabel.Location = new System.Drawing.Point(214, 107);
+            this.BalanceNumLabel.Location = new System.Drawing.Point(285, 132);
+            this.BalanceNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BalanceNumLabel.Name = "BalanceNumLabel";
-            this.BalanceNumLabel.Size = new System.Drawing.Size(111, 19);
+            this.BalanceNumLabel.Size = new System.Drawing.Size(140, 25);
             this.BalanceNumLabel.TabIndex = 84;
             this.BalanceNumLabel.Text = "BalanceNum";
             // 
@@ -97,9 +102,10 @@ namespace OOP_Lab1_Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Russo One", 12F);
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(25, 107);
+            this.label2.Location = new System.Drawing.Point(33, 132);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 19);
+            this.label2.Size = new System.Drawing.Size(230, 25);
             this.label2.TabIndex = 83;
             this.label2.Text = "AVAILABLE BALANCE:";
             // 
@@ -108,9 +114,10 @@ namespace OOP_Lab1_Forms
             this.TransferTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.TransferTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.TransferTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.TransferTB.Location = new System.Drawing.Point(196, 182);
+            this.TransferTB.Location = new System.Drawing.Point(261, 224);
+            this.TransferTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TransferTB.Name = "TransferTB";
-            this.TransferTB.Size = new System.Drawing.Size(192, 33);
+            this.TransferTB.Size = new System.Drawing.Size(255, 40);
             this.TransferTB.TabIndex = 81;
             this.TransferTB.TextChanged += new System.EventHandler(this.TransferTB_TextChanged);
             // 
@@ -119,9 +126,10 @@ namespace OOP_Lab1_Forms
             this.backLabel.AutoSize = true;
             this.backLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.backLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.backLabel.Location = new System.Drawing.Point(175, 324);
+            this.backLabel.Location = new System.Drawing.Point(233, 399);
+            this.backLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.backLabel.Name = "backLabel";
-            this.backLabel.Size = new System.Drawing.Size(52, 19);
+            this.backLabel.Size = new System.Drawing.Size(66, 25);
             this.backLabel.TabIndex = 80;
             this.backLabel.Text = "BACK";
             this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
@@ -130,9 +138,10 @@ namespace OOP_Lab1_Forms
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 346);
+            this.panel2.Location = new System.Drawing.Point(0, 425);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(396, 11);
+            this.panel2.Size = new System.Drawing.Size(528, 14);
             this.panel2.TabIndex = 79;
             // 
             // label4
@@ -140,9 +149,10 @@ namespace OOP_Lab1_Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Russo One", 12F);
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(29, 194);
+            this.label4.Location = new System.Drawing.Point(39, 239);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 19);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 78;
             this.label4.Text = "AMOUNT:";
             // 
@@ -151,11 +161,12 @@ namespace OOP_Lab1_Forms
             this.transferButton.BackColor = System.Drawing.Color.MidnightBlue;
             this.transferButton.Font = new System.Drawing.Font("Russo One", 12F);
             this.transferButton.ForeColor = System.Drawing.Color.White;
-            this.transferButton.Location = new System.Drawing.Point(196, 275);
+            this.transferButton.Location = new System.Drawing.Point(261, 338);
+            this.transferButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.transferButton.Name = "transferButton";
             this.transferButton.Rounding = 50;
             this.transferButton.RoundingEnable = true;
-            this.transferButton.Size = new System.Drawing.Size(192, 30);
+            this.transferButton.Size = new System.Drawing.Size(256, 37);
             this.transferButton.TabIndex = 82;
             this.transferButton.Text = "TRANSFER";
             this.transferButton.UseVisualStyleBackColor = false;
@@ -166,10 +177,11 @@ namespace OOP_Lab1_Forms
             this.ResultTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.ResultTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.ResultTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ResultTB.Location = new System.Drawing.Point(196, 221);
+            this.ResultTB.Location = new System.Drawing.Point(261, 272);
+            this.ResultTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ResultTB.Name = "ResultTB";
             this.ResultTB.ReadOnly = true;
-            this.ResultTB.Size = new System.Drawing.Size(192, 33);
+            this.ResultTB.Size = new System.Drawing.Size(255, 40);
             this.ResultTB.TabIndex = 87;
             // 
             // label3
@@ -177,9 +189,10 @@ namespace OOP_Lab1_Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Russo One", 12F);
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(29, 233);
+            this.label3.Location = new System.Drawing.Point(39, 287);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 19);
+            this.label3.Size = new System.Drawing.Size(131, 25);
             this.label3.TabIndex = 86;
             this.label3.Text = "RESULT (%):";
             // 
@@ -190,9 +203,10 @@ namespace OOP_Lab1_Forms
             this.clientsListBox.Font = new System.Drawing.Font("Russo One", 12F);
             this.clientsListBox.ForeColor = System.Drawing.Color.MidnightBlue;
             this.clientsListBox.FormattingEnabled = true;
-            this.clientsListBox.Location = new System.Drawing.Point(196, 136);
+            this.clientsListBox.Location = new System.Drawing.Point(261, 167);
+            this.clientsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clientsListBox.Name = "clientsListBox";
-            this.clientsListBox.Size = new System.Drawing.Size(192, 27);
+            this.clientsListBox.Size = new System.Drawing.Size(255, 33);
             this.clientsListBox.TabIndex = 88;
             // 
             // label5
@@ -200,18 +214,19 @@ namespace OOP_Lab1_Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Russo One", 12F);
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(29, 144);
+            this.label5.Location = new System.Drawing.Point(39, 177);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 19);
+            this.label5.Size = new System.Drawing.Size(158, 25);
             this.label5.TabIndex = 89;
             this.label5.Text = "TRANSFER TO:";
             // 
             // Transfer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(396, 357);
+            this.ClientSize = new System.Drawing.Size(528, 439);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.clientsListBox);
             this.Controls.Add(this.ResultTB);
@@ -225,6 +240,8 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.label4);
             this.Controls.Add(this.transferButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Transfer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transfer";

@@ -29,6 +29,7 @@ namespace OOP_Lab1_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepositClient));
             this.depositButton = new System.Windows.Forms.my_Button();
             this.DepositTB = new System.Windows.Forms.TextBox();
             this.Back_label = new System.Windows.Forms.Label();
@@ -45,11 +46,12 @@ namespace OOP_Lab1_Forms
             this.depositButton.BackColor = System.Drawing.Color.MidnightBlue;
             this.depositButton.Font = new System.Drawing.Font("Russo One", 12F);
             this.depositButton.ForeColor = System.Drawing.Color.White;
-            this.depositButton.Location = new System.Drawing.Point(134, 134);
+            this.depositButton.Location = new System.Drawing.Point(179, 165);
+            this.depositButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.depositButton.Name = "depositButton";
             this.depositButton.Rounding = 50;
             this.depositButton.RoundingEnable = true;
-            this.depositButton.Size = new System.Drawing.Size(192, 30);
+            this.depositButton.Size = new System.Drawing.Size(256, 37);
             this.depositButton.TabIndex = 66;
             this.depositButton.Text = "DEPOSIT";
             this.depositButton.UseVisualStyleBackColor = false;
@@ -60,9 +62,10 @@ namespace OOP_Lab1_Forms
             this.DepositTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.DepositTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.DepositTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.DepositTB.Location = new System.Drawing.Point(134, 95);
+            this.DepositTB.Location = new System.Drawing.Point(179, 117);
+            this.DepositTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DepositTB.Name = "DepositTB";
-            this.DepositTB.Size = new System.Drawing.Size(192, 33);
+            this.DepositTB.Size = new System.Drawing.Size(255, 40);
             this.DepositTB.TabIndex = 65;
             // 
             // Back_label
@@ -70,9 +73,10 @@ namespace OOP_Lab1_Forms
             this.Back_label.AutoSize = true;
             this.Back_label.Font = new System.Drawing.Font("Russo One", 12F);
             this.Back_label.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.Back_label.Location = new System.Drawing.Point(170, 178);
+            this.Back_label.Location = new System.Drawing.Point(227, 219);
+            this.Back_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Back_label.Name = "Back_label";
-            this.Back_label.Size = new System.Drawing.Size(52, 19);
+            this.Back_label.Size = new System.Drawing.Size(66, 25);
             this.Back_label.TabIndex = 64;
             this.Back_label.Text = "BACK";
             this.Back_label.Click += new System.EventHandler(this.Back_label_Click);
@@ -81,9 +85,10 @@ namespace OOP_Lab1_Forms
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 200);
+            this.panel2.Location = new System.Drawing.Point(0, 246);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(381, 11);
+            this.panel2.Size = new System.Drawing.Size(508, 14);
             this.panel2.TabIndex = 63;
             // 
             // label4
@@ -91,9 +96,10 @@ namespace OOP_Lab1_Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Russo One", 12F);
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(25, 104);
+            this.label4.Location = new System.Drawing.Point(33, 128);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 19);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 62;
             this.label4.Text = "AMOUNT:";
             // 
@@ -104,8 +110,9 @@ namespace OOP_Lab1_Forms
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 89);
+            this.panel1.Size = new System.Drawing.Size(508, 110);
             this.panel1.TabIndex = 67;
             // 
             // label5
@@ -114,9 +121,10 @@ namespace OOP_Lab1_Forms
             this.label5.BackColor = System.Drawing.Color.Azure;
             this.label5.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(354, 0);
+            this.label5.Location = new System.Drawing.Point(472, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(27, 26);
+            this.label5.Size = new System.Drawing.Size(33, 33);
             this.label5.TabIndex = 8;
             this.label5.Text = "X";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -126,18 +134,19 @@ namespace OOP_Lab1_Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(25, 23);
+            this.label1.Location = new System.Drawing.Point(33, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 48);
+            this.label1.Size = new System.Drawing.Size(430, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "B A N K  S Y S T E M";
             // 
             // DepositClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(381, 211);
+            this.ClientSize = new System.Drawing.Size(508, 260);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.depositButton);
             this.Controls.Add(this.DepositTB);
@@ -145,6 +154,8 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DepositClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DepositClient";

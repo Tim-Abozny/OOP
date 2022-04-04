@@ -64,6 +64,12 @@
     <Compile Include="BankStartPage.Designer.cs">
       <DependentUpon>BankStartPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompanySendRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanySendRequest.Designer.cs">
+      <DependentUpon>CompanySendRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="DepositClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="ClientHome.Designer.cs">
       <DependentUpon>ClientHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerLogin.cs">
       <SubType>Form</SubType>
@@ -129,6 +141,9 @@
     <EmbeddedResource Include="BankStartPage.resx">
       <DependentUpon>BankStartPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CompanySendRequest.resx">
+      <DependentUpon>CompanySendRequest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DepositClient.resx">
       <DependentUpon>DepositClient.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerLogin.resx">
       <DependentUpon>ManagerLogin.cs</DependentUpon>
