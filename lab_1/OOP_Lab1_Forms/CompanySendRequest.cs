@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP_Lab1_Forms
@@ -71,6 +64,55 @@ namespace OOP_Lab1_Forms
         private void periodListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             CreditTB.Text = "";
+        }
+
+        private void sendSalaryReq_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToDouble(SalaryTB.Text) > 20000)
+                {
+                    MessageBox.Show("YOU CAN'T EARN MORE THEN 20.000 $");
+                }
+                else if (Convert.ToDouble(SalaryTB.Text) < 500)
+                {
+                    MessageBox.Show("YOU CAN'T EARN LESS THEN 500 $");
+                }
+                else
+                {
+                    FileOperations.sendSalaryClientRequest(Login.ClientIDst, Convert.ToDouble(SalaryTB.Text));
+
+                    ClientHome client = new ClientHome();
+                    this.Close();
+                    client.Show();
+                }
+            }
+            catch (System.FormatException ex)
+            {
+                MessageBox.Show("PLEASE, USE ',' TO DOUBLE SUM\nOR WRITE CORRECT SUM");
+            }
+        }
+
+        private void sendCrInReq_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CreditTB.Text != "")
+                {
+                    FileOperations.sendCredInstClientRequest("CREDIT", Login.ClientIDst, Convert.ToDouble(CreditTB.Text), Convert.ToInt32(periodListBox.SelectedItem), Convert.ToDouble(ResultTB.Text));
+                }
+                else if (InstallmentTB.Text != "")
+                {
+                    FileOperations.sendCredInstClientRequest("INSTALLMENT", Login.ClientIDst, Convert.ToDouble(InstallmentTB.Text), Convert.ToInt32(periodListBox.SelectedItem), Convert.ToDouble(ResultTB.Text));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            ClientHome client = new ClientHome();
+            this.Close();
+            client.Show();
         }
     }
 }

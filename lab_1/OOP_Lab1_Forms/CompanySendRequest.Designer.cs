@@ -56,9 +56,8 @@ namespace OOP_Lab1_Forms
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 110);
+            this.panel1.Size = new System.Drawing.Size(600, 89);
             this.panel1.TabIndex = 92;
             // 
             // exitLabel
@@ -67,10 +66,9 @@ namespace OOP_Lab1_Forms
             this.exitLabel.BackColor = System.Drawing.Color.Azure;
             this.exitLabel.Font = new System.Drawing.Font("Sigmar One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitLabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.exitLabel.Location = new System.Drawing.Point(767, 0);
-            this.exitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.exitLabel.Location = new System.Drawing.Point(575, 0);
             this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(33, 33);
+            this.exitLabel.Size = new System.Drawing.Size(27, 26);
             this.exitLabel.TabIndex = 8;
             this.exitLabel.Text = "X";
             this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
@@ -80,10 +78,9 @@ namespace OOP_Lab1_Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(210, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(158, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 61);
+            this.label1.Size = new System.Drawing.Size(327, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "B A N K  S Y S T E M";
             // 
@@ -91,10 +88,9 @@ namespace OOP_Lab1_Forms
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 455);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 370);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 14);
+            this.panel2.Size = new System.Drawing.Size(600, 11);
             this.panel2.TabIndex = 88;
             // 
             // SalaryTB
@@ -102,10 +98,9 @@ namespace OOP_Lab1_Forms
             this.SalaryTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.SalaryTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.SalaryTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.SalaryTB.Location = new System.Drawing.Point(291, 166);
-            this.SalaryTB.Margin = new System.Windows.Forms.Padding(4);
+            this.SalaryTB.Location = new System.Drawing.Point(218, 135);
             this.SalaryTB.Name = "SalaryTB";
-            this.SalaryTB.Size = new System.Drawing.Size(255, 40);
+            this.SalaryTB.Size = new System.Drawing.Size(192, 33);
             this.SalaryTB.TabIndex = 96;
             // 
             // CreditTB
@@ -113,10 +108,9 @@ namespace OOP_Lab1_Forms
             this.CreditTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.CreditTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.CreditTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.CreditTB.Location = new System.Drawing.Point(291, 227);
-            this.CreditTB.Margin = new System.Windows.Forms.Padding(4);
+            this.CreditTB.Location = new System.Drawing.Point(218, 184);
             this.CreditTB.Name = "CreditTB";
-            this.CreditTB.Size = new System.Drawing.Size(255, 40);
+            this.CreditTB.Size = new System.Drawing.Size(192, 33);
             this.CreditTB.TabIndex = 97;
             this.CreditTB.TextChanged += new System.EventHandler(this.CreditTB_TextChanged);
             // 
@@ -125,10 +119,9 @@ namespace OOP_Lab1_Forms
             this.InstallmentTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.InstallmentTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.InstallmentTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.InstallmentTB.Location = new System.Drawing.Point(291, 286);
-            this.InstallmentTB.Margin = new System.Windows.Forms.Padding(4);
+            this.InstallmentTB.Location = new System.Drawing.Point(218, 232);
             this.InstallmentTB.Name = "InstallmentTB";
-            this.InstallmentTB.Size = new System.Drawing.Size(255, 40);
+            this.InstallmentTB.Size = new System.Drawing.Size(192, 33);
             this.InstallmentTB.TabIndex = 98;
             this.InstallmentTB.TextChanged += new System.EventHandler(this.InstallmentTB_TextChanged);
             // 
@@ -144,10 +137,9 @@ namespace OOP_Lab1_Forms
             "6",
             "9",
             "12"});
-            this.periodListBox.Location = new System.Drawing.Point(594, 226);
-            this.periodListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.periodListBox.Location = new System.Drawing.Point(437, 184);
             this.periodListBox.Name = "periodListBox";
-            this.periodListBox.Size = new System.Drawing.Size(158, 41);
+            this.periodListBox.Size = new System.Drawing.Size(129, 33);
             this.periodListBox.TabIndex = 102;
             this.periodListBox.SelectedIndexChanged += new System.EventHandler(this.periodListBox_SelectedIndexChanged);
             // 
@@ -156,10 +148,9 @@ namespace OOP_Lab1_Forms
             this.sumLabel.AutoSize = true;
             this.sumLabel.Font = new System.Drawing.Font("Russo One", 16F);
             this.sumLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.sumLabel.Location = new System.Drawing.Point(386, 129);
-            this.sumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sumLabel.Location = new System.Drawing.Point(289, 106);
             this.sumLabel.Name = "sumLabel";
-            this.sumLabel.Size = new System.Drawing.Size(77, 33);
+            this.sumLabel.Size = new System.Drawing.Size(64, 26);
             this.sumLabel.TabIndex = 103;
             this.sumLabel.Text = "SUM";
             // 
@@ -168,11 +159,10 @@ namespace OOP_Lab1_Forms
             this.ResultTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
             this.ResultTB.Font = new System.Drawing.Font("Russo One", 16F);
             this.ResultTB.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ResultTB.Location = new System.Drawing.Point(291, 359);
-            this.ResultTB.Margin = new System.Windows.Forms.Padding(4);
+            this.ResultTB.Location = new System.Drawing.Point(218, 292);
             this.ResultTB.Name = "ResultTB";
             this.ResultTB.ReadOnly = true;
-            this.ResultTB.Size = new System.Drawing.Size(255, 40);
+            this.ResultTB.Size = new System.Drawing.Size(192, 33);
             this.ResultTB.TabIndex = 105;
             // 
             // resultLabel
@@ -180,10 +170,9 @@ namespace OOP_Lab1_Forms
             this.resultLabel.AutoSize = true;
             this.resultLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.resultLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.resultLabel.Location = new System.Drawing.Point(47, 368);
-            this.resultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.resultLabel.Location = new System.Drawing.Point(23, 299);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(222, 25);
+            this.resultLabel.Size = new System.Drawing.Size(179, 19);
             this.resultLabel.TabIndex = 104;
             this.resultLabel.Text = "SUM TO RETURN (%):";
             // 
@@ -192,10 +181,9 @@ namespace OOP_Lab1_Forms
             this.backLabel.AutoSize = true;
             this.backLabel.Font = new System.Drawing.Font("Russo One", 12F);
             this.backLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.backLabel.Location = new System.Drawing.Point(387, 424);
-            this.backLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.backLabel.Location = new System.Drawing.Point(290, 344);
             this.backLabel.Name = "backLabel";
-            this.backLabel.Size = new System.Drawing.Size(66, 25);
+            this.backLabel.Size = new System.Drawing.Size(52, 19);
             this.backLabel.TabIndex = 89;
             this.backLabel.Text = "BACK";
             this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
@@ -205,42 +193,42 @@ namespace OOP_Lab1_Forms
             this.sendCrInReq.BackColor = System.Drawing.Color.MidnightBlue;
             this.sendCrInReq.Font = new System.Drawing.Font("Russo One", 12F);
             this.sendCrInReq.ForeColor = System.Drawing.Color.White;
-            this.sendCrInReq.Location = new System.Drawing.Point(594, 289);
-            this.sendCrInReq.Margin = new System.Windows.Forms.Padding(4);
+            this.sendCrInReq.Location = new System.Drawing.Point(437, 235);
             this.sendCrInReq.Name = "sendCrInReq";
             this.sendCrInReq.Rounding = 50;
             this.sendCrInReq.RoundingEnable = true;
-            this.sendCrInReq.Size = new System.Drawing.Size(158, 37);
+            this.sendCrInReq.Size = new System.Drawing.Size(127, 30);
             this.sendCrInReq.TabIndex = 101;
             this.sendCrInReq.Text = "SEND CR/IN";
             this.sendCrInReq.UseVisualStyleBackColor = false;
+            this.sendCrInReq.Click += new System.EventHandler(this.sendCrInReq_Click);
             // 
             // sendSalaryReq
             // 
             this.sendSalaryReq.BackColor = System.Drawing.Color.MidnightBlue;
             this.sendSalaryReq.Font = new System.Drawing.Font("Russo One", 12F);
             this.sendSalaryReq.ForeColor = System.Drawing.Color.White;
-            this.sendSalaryReq.Location = new System.Drawing.Point(594, 169);
-            this.sendSalaryReq.Margin = new System.Windows.Forms.Padding(4);
+            this.sendSalaryReq.Location = new System.Drawing.Point(437, 137);
             this.sendSalaryReq.Name = "sendSalaryReq";
             this.sendSalaryReq.Rounding = 50;
             this.sendSalaryReq.RoundingEnable = true;
-            this.sendSalaryReq.Size = new System.Drawing.Size(158, 37);
+            this.sendSalaryReq.Size = new System.Drawing.Size(127, 30);
             this.sendSalaryReq.TabIndex = 99;
             this.sendSalaryReq.Text = "SEND SALARY";
             this.sendSalaryReq.UseVisualStyleBackColor = false;
+            this.sendSalaryReq.Click += new System.EventHandler(this.sendSalaryReq_Click);
             // 
             // noneInstallment
             // 
             this.noneInstallment.BackColor = System.Drawing.Color.MidnightBlue;
+            this.noneInstallment.Enabled = false;
             this.noneInstallment.Font = new System.Drawing.Font("Russo One", 12F);
             this.noneInstallment.ForeColor = System.Drawing.Color.White;
-            this.noneInstallment.Location = new System.Drawing.Point(13, 289);
-            this.noneInstallment.Margin = new System.Windows.Forms.Padding(4);
+            this.noneInstallment.Location = new System.Drawing.Point(10, 235);
             this.noneInstallment.Name = "noneInstallment";
             this.noneInstallment.Rounding = 50;
             this.noneInstallment.RoundingEnable = true;
-            this.noneInstallment.Size = new System.Drawing.Size(256, 37);
+            this.noneInstallment.Size = new System.Drawing.Size(192, 30);
             this.noneInstallment.TabIndex = 95;
             this.noneInstallment.Text = "INSTALLMENT";
             this.noneInstallment.UseVisualStyleBackColor = false;
@@ -248,14 +236,14 @@ namespace OOP_Lab1_Forms
             // noneCredit
             // 
             this.noneCredit.BackColor = System.Drawing.Color.MidnightBlue;
+            this.noneCredit.Enabled = false;
             this.noneCredit.Font = new System.Drawing.Font("Russo One", 12F);
             this.noneCredit.ForeColor = System.Drawing.Color.White;
-            this.noneCredit.Location = new System.Drawing.Point(13, 230);
-            this.noneCredit.Margin = new System.Windows.Forms.Padding(4);
+            this.noneCredit.Location = new System.Drawing.Point(10, 187);
             this.noneCredit.Name = "noneCredit";
             this.noneCredit.Rounding = 50;
             this.noneCredit.RoundingEnable = true;
-            this.noneCredit.Size = new System.Drawing.Size(256, 37);
+            this.noneCredit.Size = new System.Drawing.Size(192, 30);
             this.noneCredit.TabIndex = 94;
             this.noneCredit.Text = "CREDIT";
             this.noneCredit.UseVisualStyleBackColor = false;
@@ -263,24 +251,24 @@ namespace OOP_Lab1_Forms
             // noneSalary
             // 
             this.noneSalary.BackColor = System.Drawing.Color.MidnightBlue;
+            this.noneSalary.Enabled = false;
             this.noneSalary.Font = new System.Drawing.Font("Russo One", 12F);
             this.noneSalary.ForeColor = System.Drawing.Color.White;
-            this.noneSalary.Location = new System.Drawing.Point(13, 169);
-            this.noneSalary.Margin = new System.Windows.Forms.Padding(4);
+            this.noneSalary.Location = new System.Drawing.Point(10, 137);
             this.noneSalary.Name = "noneSalary";
             this.noneSalary.Rounding = 50;
             this.noneSalary.RoundingEnable = true;
-            this.noneSalary.Size = new System.Drawing.Size(256, 37);
+            this.noneSalary.Size = new System.Drawing.Size(192, 30);
             this.noneSalary.TabIndex = 93;
             this.noneSalary.Text = "SALARY";
             this.noneSalary.UseVisualStyleBackColor = false;
             // 
             // CompanySendRequest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(147)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(800, 469);
+            this.ClientSize = new System.Drawing.Size(600, 381);
             this.Controls.Add(this.ResultTB);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.sumLabel);
@@ -297,6 +285,7 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.backLabel);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CompanySendRequest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CompanySendRequest";

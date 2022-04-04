@@ -51,20 +51,6 @@ namespace OOP_Lab1_Forms
             set { _clientID = value; }
         }
 
-
         public Client() { }
-
-        public void CreditRequsts(int id, double wantCash, int creditTime)
-        {
-            FileOperations.sendCreditClientRequest(id, wantCash, creditTime);
-        }
-        public void InstallmentsRequsts()
-        {
-
-        }
-        public void SalaryRequsts()
-        {
-
-        }
     }
 }
