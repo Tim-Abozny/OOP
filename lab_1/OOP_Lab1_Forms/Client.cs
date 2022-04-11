@@ -50,7 +50,10 @@ namespace OOP_Lab1_Forms
             get { return _clientID; }
             set { _clientID = value; }
         }
-
+        public Client Clone() // Prototype pattern realiz.
+        {
+            return (Client)this.MemberwiseClone();
+        }
         public Client() { }
     }
 }

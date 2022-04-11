@@ -5,10 +5,10 @@ namespace OOP_Lab1_Forms
 {
     class FileOperations
     {
-        public static string currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
-        public static string currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
-        public static string requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
-        public static void CurrentPath(string role)
+        private static string currentLogsPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\LogsDB\";
+        private static string currentPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\SystemDB\";
+        private static string requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
+        private static void CurrentPath(string role)
         {
             if (role == "manager")
             {
@@ -41,7 +41,7 @@ namespace OOP_Lab1_Forms
                 }
             }
         }
-        public static void LogPath()
+        private static void LogPath()
         {
             if (BankStartPage.BSUIR_Login == 1)
             {
@@ -56,7 +56,7 @@ namespace OOP_Lab1_Forms
                 currentLogsPath += "FORESTLogs.txt";
             }
         }
-        public static void RequestPath()
+        private static void RequestPath()
         {
             if (BankStartPage.BSUIR_Login == 1)
             {
