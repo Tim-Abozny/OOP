@@ -89,7 +89,7 @@ namespace OOP_Lab1_Forms
             }
             catch (System.FormatException ex)
             {
-                MessageBox.Show("PLEASE, USE ',' TO DOUBLE SUM\nOR WRITE CORRECT SUM");
+                MessageBox.Show($"PLEASE, USE ',' TO DOUBLE SUM\nOR WRITE CORRECT SUM\n{ex.Message}");
             }
         }
 

@@ -32,13 +32,15 @@ namespace OOP_Lab1_Forms
             client.ClientID = Convert.ToInt32(ID_TB.Text);
             client.ClientPIN = Pin_TB.Text;
 
+            Client transferClient = client.Clone();//Prototype pattern
+
             FileOperations.AddClient
                 (
-                    client.ClientName,
-                    client.ClientSurname,
-                    client.ClientLogin,
-                    client.ClientID,
-                    client.ClientPIN
+                    transferClient.ClientName,
+                    transferClient.ClientSurname,
+                    transferClient.ClientLogin,
+                    transferClient.ClientID,
+                    transferClient.ClientPIN
                 );
             MessageBox.Show("OPERATION SUCCESS");
             

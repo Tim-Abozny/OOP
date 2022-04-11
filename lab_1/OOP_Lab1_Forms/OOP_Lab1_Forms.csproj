@@ -181,6 +181,7 @@
     <EmbeddedResource Include="WithdrawClient.resx">
       <DependentUpon>WithdrawClient.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BankDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
