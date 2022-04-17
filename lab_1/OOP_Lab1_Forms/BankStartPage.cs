@@ -10,7 +10,7 @@ namespace OOP_Lab1_Forms
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void exitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

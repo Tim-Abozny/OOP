@@ -181,7 +181,6 @@
     <EmbeddedResource Include="WithdrawClient.resx">
       <DependentUpon>WithdrawClient.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BankDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -191,6 +190,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\oopDiagram.mdj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

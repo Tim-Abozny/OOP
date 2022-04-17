@@ -32,10 +32,10 @@ namespace OOP_Lab1_Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManagerHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.atmLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.requestLabel = new System.Windows.Forms.Label();
             this.requestsListBox = new System.Windows.Forms.ListBox();
             this.salaryButton = new System.Windows.Forms.my_Button();
             this.installmentButton = new System.Windows.Forms.my_Button();
@@ -50,7 +50,7 @@ namespace OOP_Lab1_Forms
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.exitLabel);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.atmLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -71,16 +71,16 @@ namespace OOP_Lab1_Forms
             this.exitLabel.Text = "X";
             this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
             // 
-            // label1
+            // atmLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(92, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 48);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "B A N K  S Y S T E M";
+            this.atmLabel.AutoSize = true;
+            this.atmLabel.Font = new System.Drawing.Font("Sigmar One", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atmLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.atmLabel.Location = new System.Drawing.Point(92, 27);
+            this.atmLabel.Name = "atmLabel";
+            this.atmLabel.Size = new System.Drawing.Size(327, 48);
+            this.atmLabel.TabIndex = 0;
+            this.atmLabel.Text = "B A N K  S Y S T E M";
             // 
             // panel2
             // 
@@ -101,17 +101,17 @@ namespace OOP_Lab1_Forms
             this.pictureBox1.TabIndex = 67;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // requestLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Russo One", 12F);
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(384, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 21);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "REQUESTS";
+            this.requestLabel.AutoSize = true;
+            this.requestLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.requestLabel.Font = new System.Drawing.Font("Russo One", 12F);
+            this.requestLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.requestLabel.Location = new System.Drawing.Point(384, 89);
+            this.requestLabel.Name = "requestLabel";
+            this.requestLabel.Size = new System.Drawing.Size(98, 21);
+            this.requestLabel.TabIndex = 69;
+            this.requestLabel.Text = "REQUESTS";
             // 
             // requestsListBox
             // 
@@ -215,11 +215,11 @@ namespace OOP_Lab1_Forms
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.creditButton);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.requestLabel);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManagerHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerHome";
@@ -235,12 +235,12 @@ namespace OOP_Lab1_Forms
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label exitLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label atmLabel;
         private System.Windows.Forms.my_Button backButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.my_Button creditButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label requestLabel;
         private System.Windows.Forms.my_Button installmentButton;
         private System.Windows.Forms.my_Button salaryButton;
         private System.Windows.Forms.ListBox requestsListBox;
