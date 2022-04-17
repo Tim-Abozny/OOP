@@ -10,7 +10,7 @@ namespace OOP_Lab1_Forms
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void exitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -149,7 +149,7 @@ namespace OOP_Lab1_Forms
             BankStartPage.FOREST_Login = 0;
         }
 
-        private void my_Button1_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             Login.AccountLogout();
             Login.ChooseBank();

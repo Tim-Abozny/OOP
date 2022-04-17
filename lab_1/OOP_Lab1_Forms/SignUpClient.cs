@@ -10,19 +10,19 @@ namespace OOP_Lab1_Forms
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void exitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void Back_label_Click(object sender, EventArgs e)
+        private void backLabel_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             this.Hide();
             login.Show();
         }
 
-        private void SignUpButton_Click(object sender, EventArgs e)
+        private void signUpButton_Click(object sender, EventArgs e)
         {
             Client client = new Client();
 

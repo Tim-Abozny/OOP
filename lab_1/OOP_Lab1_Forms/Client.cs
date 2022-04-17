@@ -52,7 +52,14 @@ namespace OOP_Lab1_Forms
         }
         public Client Clone() // Prototype pattern realiz.
         {
-            return (Client)this.MemberwiseClone();
+            Client clone = (Client)this.MemberwiseClone();
+            clone.ClientName = ClientName;
+            clone.ClientSurname = ClientSurname;
+            clone.ClientLogin = ClientLogin;
+            clone.ClientID = ClientID;
+            clone.ClientPIN = ClientPIN;
+
+            return clone;
         }
         public Client() { }
     }
