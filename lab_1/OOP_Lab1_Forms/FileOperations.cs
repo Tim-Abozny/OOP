@@ -189,5 +189,12 @@ namespace OOP_Lab1_Forms
                 
                 return clientsRequests;
         }
+        public static void RewriteRequests(string[] req)
+        {
+            RequestPath();
+
+            File.WriteAllLines(requestPath, req);
+            requestPath = @"C:\Users\progr\source\repos\C#\2022\OOP\lab_1\OOP_Lab1_Forms\ClientRequests\";
+        }
     }
 }
