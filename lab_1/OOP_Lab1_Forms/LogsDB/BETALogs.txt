@@ -2,3 +2,4 @@
 0/Jesika/Pugway/WITHDRAW/340/
 1/Tim/Obozny/DEPOSIT/600/
 0/Jesika/Pugway/TRANSFER/970/1/Tim/Obozny/
+0/Jesika/Pugway/TRANSFER/620,8/1/Tim/Obozny/
